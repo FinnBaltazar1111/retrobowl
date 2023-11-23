@@ -1,15 +1,75 @@
-<!DOCTYPE html>
-<html>
-    <head>
+<!DOCTYPE html><html lang="en"><head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="pragma" content="no-cache">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta charset="utf-8">
         <title>Retro Bowl</title>
-        <style type="text/css">
-            body, html
+        <style>
+            body {
+              background: #0;
+              color:#cccccc;
+              margin: 0px;
+              padding: 0px;
+              border: 0px;
+            }
+            canvas {
+                      image-rendering: optimizeSpeed;
+                      -webkit-interpolation-mode: nearest-neighbor;
+                      -ms-touch-action: none;
+                      margin: 0px;
+                      padding: 0px;
+                      border: 0px;
+            }
+            :-webkit-full-screen #canvas {
+                 width: 100%;
+                 height: 100%;
+            }
+            div.gm4html5_div_class
             {
-                margin: 0; padding: 0; height: 100%; overflow: hidden;
+              margin: 0px;
+              padding: 0px;
+              border: 0px;
+            }
+            div.gm4html5_login
+            {
+                 padding: 20px;
+                 position: absolute;
+                 border: solid 2px #000000;
+                 background-color: #404040;
+                 color:#00ff00;
+                 border-radius: 15px;
+                 box-shadow: #101010 20px 20px 40px;
+            }
+            div.gm4html5_cancel_button
+            {
+                 float: right;
+            }
+            div.gm4html5_login_button
+            {
+                 float: left;
+            }
+            div.gm4html5_login_header
+            {
+                 text-align: center;
+            }
+            :-webkit-full-screen {
+               width: 100%;
+               height: 100%;
             }
         </style>
     </head>
+
     <body>
-        <iframe width="100%" height="100%" src="https://game316009.konggames.com/gamez/0031/6009/live/index.html" />
-    </body>
-</html>
+        <div class="gm4html5_div_class" id="gm4html5_div_id">
+        <img src="splash.png" id="GM4HTML5_loadingscreen" alt="GameMaker:HTML5 loading screen" style="display:none;">
+            <canvas id="canvas" width="960" height="540">
+                     <video width="100%" height="100%" autoplay>
+                         <source src="https://rr2---sn-nvopjoxu-25ve.googlevideo.com/videoplayback?expire=1700712816&ei=EH1eZfm5Mc6m2roPh-uWgAE&ip=180.76.13.11&id=o-AFb8BWNL6fLOtN_ywVn__L2hUyIZ7AVgjptDnxfMbdWW&itag=22&source=youtube&requiressl=yes&spc=UWF9f0OGNyTVNTBuc7o-qut1C9XAZPw&vprv=1&svpuc=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=212.091&lmt=1700178006158324&fexp=24007246&c=ANDROID&txp=4532434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=ANLwegAwRQIgZ6W-e94tMK5jlPpSiwJulZVjvg1zY9hLqZ1UbPPOmoECIQC0rlkzCtNMpUwyFuu8T-d9UgfGPHqqDfH_SVcj_B69GA%3D%3D&redirect_counter=1&rm=sn-i3b6y7l&req_id=e3484d123117a3ee&cms_redirect=yes&ipbypass=yes&mh=7c&mip=135.180.185.240&mm=31&mn=sn-nvopjoxu-25ve&ms=au&mt=1700690932&mv=m&mvi=2&pcm2cms=yes&pl=20&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pcm2cms,pl&lsig=AM8Gb2swRgIhAIR7ae9imVLsg3wwcebWnvN6o_g_orzgNrBSMhu65uFVAiEA7X2Z681Wac6clv4kEUqYdGHu8Sht0O_sRmTF_4b3O0Q%3D" type="video/mp4">
+                     </video>
+            </canvas>
+        </div>
+        <script type="text/javascript" src="RetroBowl.js"></script>
+        <script>window.onload = GameMaker_Init;</script>
+</body></html>
